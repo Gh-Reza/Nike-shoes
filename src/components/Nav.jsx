@@ -10,18 +10,18 @@ const Nav = () => {
       <NikeLogo className="w-20 h-20" />
 
       {/* Hamburger menu */}
-      <button className="p-1 rounded-sm hover:bg-gray-100 focus:ring-2 focus:ring-gray-200">
+      <button className="p-1 rounded-sm lg:hidden hover:bg-gray-100 focus:ring-2 focus:ring-gray-200">
         <RxHamburgerMenu size={25} />
       </button>
 
       {/* Menu list */}
-      <div className="w-full">
-        <ul className="p-4 text-lg rounded bg-gray-50">
+      <div className="w-full lg:w-auto">
+        <ul className="p-4 text-lg rounded lg:flex bg-gray-50 lg:bg-transparent">
           {ROUTES.map((route, i) => (
             <li
-              className={`px-3 py-2 rounded ${
+              className={`px-3 py-2 rounded cursor-pointer ${
                 i === 0
-                  ? "first:bg-blue-500 first:text-white"
+                  ? "lg:first:bg-transparent lg:first:text-blue-500 first:bg-blue-500 first:text-white"
                   : "hover:bg-gray-100"
               } `}
               key={route}
@@ -33,7 +33,7 @@ const Nav = () => {
       </div>
 
       {/* Cart icon */}
-      <div className="fixed w-12 h-12 rounded-full shadow-md left-4 bottom-4 flex-center">
+      <div className="fixed w-12 h-12 rounded-full shadow-md lg:static left-4 bottom-4 flex-center">
         <FaShoppingBag />
       </div>
     </nav>
