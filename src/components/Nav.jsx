@@ -38,7 +38,7 @@ const Nav = () => {
       </div>
 
       {/* Cart icon */}
-      <div className="fixed w-12 h-12 rounded-full shadow-md lg:static left-4 bottom-4 flex-center">
+      <div className="fixed w-12 h-12 rounded-full shadow-md cursor-pointer lg:static left-4 bottom-4 flex-center">
         <FaShoppingBag />
       </div>
     </nav>
