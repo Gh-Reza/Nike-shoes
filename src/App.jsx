@@ -1,5 +1,9 @@
+import Nav from "./components/Nav";
+
 function App() {
-  return <h1>Hello</h1>;
+  return <div className="p-10 md:p-24">
+    <Nav />
+  </div>;
 }
 
 export default App;
