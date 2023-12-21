@@ -1,3 +1,4 @@
+import { FaShoppingBag } from "react-icons/fa";
 import NikeLogo from "../assets/nike-logo.svg?react";
 import { RxHamburgerMenu } from "react-icons/rx";
 
@@ -29,6 +30,11 @@ const Nav = () => {
             </li>
           ))}
         </ul>
+      </div>
+
+      {/* Cart icon */}
+      <div className="fixed w-12 h-12 rounded-full shadow-md left-4 bottom-4 flex-center">
+        <FaShoppingBag />
       </div>
     </nav>
   );
